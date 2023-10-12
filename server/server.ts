@@ -2,6 +2,8 @@ import express, { Request, Response } from "express";
 import cors from "cors";
 import next from "next";
 
+import router from "@server/router";
+
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
@@ -17,9 +19,11 @@ const port = 3000;
         }));
         server.use(cors());
 
-        server.get("/api", (req: Request, res: Response) => {
-            return res.json("GET API endpoint");
-        });
+        server.use("/api",router);
+
+        // server.get("/api", (req: Request, res: Response) => {
+        //     return res.json("GET API endpoint");
+        // });
         server.all("/*", (req: Request, res: Response) => {
             return handle(req, res);
         });
