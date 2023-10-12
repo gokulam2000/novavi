@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const next_1 = __importDefault(require("next"));
+const router_1 = __importDefault(require("@server/router"));
 const dev = process.env.NODE_ENV !== "production";
 const app = (0, next_1.default)({ dev });
 const handle = app.getRequestHandler();
@@ -19,9 +20,10 @@ const port = 3000;
             extended: true
         }));
         server.use((0, cors_1.default)());
-        server.get("/api", (req, res) => {
-            return res.json("GET API endpoint");
-        });
+        server.use("/api", router_1.default);
+        // server.get("/api", (req: Request, res: Response) => {
+        //     return res.json("GET API endpoint");
+        // });
         server.all("/*", (req, res) => {
             return handle(req, res);
         });
