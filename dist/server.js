@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const next_1 = __importDefault(require("next"));
-const router_1 = __importDefault(require("@server/router"));
+const router_1 = __importDefault(require("./router"));
 const dev = process.env.NODE_ENV !== "production";
 const app = (0, next_1.default)({ dev });
 const handle = app.getRequestHandler();

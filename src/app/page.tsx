@@ -1,24 +1,34 @@
 "use client"
-import { useState, useRef, MouseEvent } from "react";
-import CSS from "csstype";
+import Image from "next/image";
+import { useEffect } from "react";
 
 import "./style.scss";
+import novaviLogo from "@app/assets/novavi-logo.png";
 
 export default function Home() {
-  const [pos, setPos] = useState<CSS.Properties>({
-    top: "0px",
-    left: "0px"
-  });
-  function circleHandler(event: MouseEvent): void {
-    setPos({ top: event.clientY + "px", left: event.clientX + "px"});
-  }
+  useEffect(() => {
+    let circle = document.getElementById("mouse-circle")!;
+    document.body.addEventListener("mousemove", function (e) {
+      console.log(e);
+
+      circle.style.left = e.clientX + "px",
+        circle.style.top = e.clientY + "px";
+    });
+  }, []);
   return (
-    <main
-    className="flex min-h-screen flex-col items-center justify-between p-24"
-    onMouseMove={circleHandler}
-    style={{ height: "200vh" }}
-    >
-      <div id="mouse-circle" style={pos}></div>
+    <main className="min-h-screen">
+      <div id="mouse-circle"></div>
+      <div className="header-wrapper f-nav">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <Image src={novaviLogo} alt="novavi logo" />
+            </div>
+            <div className="col"></div>
+            <div className="col"></div>
+          </div>
+        </div>
+      </div>
     </main>
   )
 }
