@@ -2,7 +2,7 @@ import express, { Request, Response } from "express";
 import cors from "cors";
 import next from "next";
 
-import router from "@server/router";
+import router from "./router";
 
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
