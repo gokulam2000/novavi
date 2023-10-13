@@ -1,4 +1,5 @@
 $YellowColor: #fdcf49;
+
 * {
   box-sizing: border-box;
 }
@@ -22,6 +23,7 @@ $YellowColor: #fdcf49;
   -ms-animation: puls 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   animation: 1.25s cubic-bezier(0.66, 0, 0, 1) infinite puls;
 }
+
 .header-wrapper {
   width: 100%;
   position: fixed;
@@ -31,11 +33,22 @@ $YellowColor: #fdcf49;
   padding-top: 40px;
   transition-duration: 0.3s;
 }
+
 .f-nav {
   background-color: #000000e6;
   padding-bottom: 8px;
   padding-top: 8px;
+
+  .row {
+    .col {
+      img {
+        height: 45px !important;
+        width: auto !important;
+      }
+    }
+  }
 }
+
 .container {
   width: 100%;
   max-width: 1240px;
@@ -49,6 +62,12 @@ $YellowColor: #fdcf49;
 
     .col {
       flex: 0 0 33.33333%;
+
+      img {
+        width: 207px;
+        height: 72px;
+        transition-duration: 0.3s;
+      }
     }
   }
 }

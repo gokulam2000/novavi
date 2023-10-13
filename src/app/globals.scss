@@ -15,8 +15,13 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+html {
+  overflow: hidden;
+}
 
 body {
+  overflow-y: auto;
+  height: 100svh;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
