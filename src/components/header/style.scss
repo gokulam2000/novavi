@@ -1,0 +1,47 @@
+.header-wrapper {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1045;
+    padding-top: 40px;
+    transition-duration: 0.3s;
+
+    .container {
+        width: 100%;
+        max-width: 1240px;
+        padding-inline: 15px;
+        margin-inline: auto;
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: -15px;
+
+            .col {
+                flex: 0 0 33.33333%;
+
+                img {
+                    width: 207px;
+                    height: 72px;
+                    transition-duration: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+.f-nav {
+    background-color: var(--header-background);
+    padding-bottom: 8px;
+    padding-top: 8px;
+
+    .row {
+        .col {
+            img {
+                height: 45px !important;
+                width: auto !important;
+            }
+        }
+    }
+}
