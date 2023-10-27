@@ -9,7 +9,8 @@ export default function Home() {
     <main className="min-h-screen">
       <Circle />
       <Header />
-      <div style={{ height: "200vh" }}></div>
+      <div style={{ height: "200vh" }}>
+      </div>
     </main>
   )
 }
