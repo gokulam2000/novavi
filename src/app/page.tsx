@@ -4,7 +4,7 @@ import "./style.scss";
 import Header from "@app/components/header/header";
 import Circle from "@app/components/circle/circle";
 
-export default function Home() {
+export default function App() {
   return (
     <main className="min-h-screen">
       <Circle />
