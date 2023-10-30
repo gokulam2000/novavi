@@ -79,7 +79,7 @@ export default function Header(props: CSSProperties) {
           role="button"
          >
           About Us
-          <span className="mega-indicator" />
+          <span className="mega-indicator" >&#xF140;</span>
          </a>
          <ul className="mega-sub-menu">
           <li

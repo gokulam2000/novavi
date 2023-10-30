@@ -1,5 +1,9 @@
 @import "@app/main.scss";
 
+* {
+  box-sizing: border-box;
+}
+
 .header-wrapper {
   width: 100%;
   position: fixed;
@@ -36,6 +40,7 @@
         width: 100%;
 
         .mega-menu-wrap {
+          height: 36px;
          width: 100%;
 
          .mega-menu-toggle {
@@ -46,12 +51,52 @@
           flex-direction: row;
           align-items: center;
           justify-content: space-around;
+          height: 100%;
           width: 100%;
           font-size: 14px;
           color: $headingColor;
 
           .mega-menu-item {
            // flex: 1;
+
+          .mega-indicator {
+            display: inline-block;
+            width: auto;
+            background: transparent;
+            font-family: dashicons;
+            position: relative;
+            pointer-events: auto;
+            left: auto;
+            min-width: auto;
+            font-size: inherit;
+            padding: 0;
+            margin: 0 0 0 6px;
+            height: auto;
+            line-height: inherit;
+            color: inherit;
+        }
+
+          .mega-indicator::after {
+            content: #{'"' + \F140 + '"'};
+            font-weight: normal;
+            display: inline-block;
+            margin: 0;
+            vertical-align: top;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transform: rotate(0);
+            color: inherit;
+            position: relative;
+            background: transparent;
+            height: auto;
+            width: auto;
+            right: auto;
+            line-height: inherit;
+        }
+
+           .mega-sub-menu {
+            display: none;
+           }
           } 
          }
         }
