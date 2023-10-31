@@ -16,16 +16,17 @@
   .container {
     width: 100%;
     max-width: 1240px;
-    padding-inline: 15px;
-    margin-inline: auto;
-
+    margin-inline: 0;
+    
     .row {
       display: flex;
       flex-wrap: wrap;
-      min-height: -15px;
-
+      
       .col {
         flex: 0 0 33.33333%;
+        padding-bottom: 0;
+        padding-inline: 15px;
+        margin: 0;
 
         img {
           width: 207px;
@@ -34,8 +35,9 @@
         }
       }
       .col:nth-child(2) {
+        display: flex;
+        align-items: center;
         padding-inline: 15px;
-        padding-top: 18px;
         position: relative;
         width: 100%;
 
@@ -50,73 +52,74 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-evenly;
             height: 100%;
             width: 100%;
             font-size: 14px;
             color: $headingColor;
 
             .mega-menu-item {
-              // flex: 1;
-
-              .mega-indicator {
-                display: inline-block;
-                width: auto;
-                background: transparent;
-                font-family: dashicons;
-                position: relative;
-                pointer-events: auto;
-                left: auto;
-                min-width: auto;
-                font-size: inherit;
-                padding: 0;
-                margin: 0 0 0 6px;
-                height: auto;
-                line-height: inherit;
-                color: inherit;
-              }
-
-              .mega-indicator::after {
-                content: #{'"' + \F140+ '"'};
-                font-weight: normal;
-                display: inline-block;
-                margin: 0;
-                vertical-align: top;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                transform: rotate(0);
-                color: inherit;
-                position: relative;
-                background: transparent;
-                height: auto;
-                width: auto;
-                right: auto;
-                line-height: inherit;
-              }
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 100%;
+              text-align: center;
 
               .mega-sub-menu {
                 display: none;
               }
             }
+            .mega-menu-item:hover {
+              color: $YellowColor;
+            }
           }
         }
       }
       .col:nth-child(3) {
-        .fas {
-          font-weight: 900;
-          font-family: "Font Awesome 5 Free";
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 15px 0px;
+        h6 {
+          display: flex;
           color: $YellowColor;
-          -moz-osx-font-smoothing: grayscale;
-          -webkit-font-smoothing: antialiased;
-          display: inline-block;
-          font-style: normal;
-          font-variant: normal;
-          text-rendering: auto;
-          line-height: 1;
+          align-items: center;
+          gap: 8px;
+
+          a {
+            color: $headingColor;
+            font-size: 15px;
+            font-weight: 600;
+          }
         }
-        .fas:before {
-          content: "\f879";
-      }
+        .contact-btn {
+          display: flex;
+          height: 36px;
+          width: 140px;
+          align-items: center;
+          justify-content: center;
+          background-color: $YellowColor;
+          color: $BlackColor;
+          border-radius: 18px;
+          font-weight: 600;
+          font-size: 15px;
+          font-family: 'Open Sans', sans-serif !important;
+          cursor: pointer;
+        }
+        .hamburgermenu{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          height: 25px;
+          width: 25px;
+        }
+        .hamburgermenu > * {
+          display: block;
+          height: 2px;
+          width: 24px;
+          background-color: $headingColor;
+        }
       }
     }
   }

@@ -1,6 +1,8 @@
 "use client"
 import Image from "next/image";
 import { CSSProperties, useEffect, useRef } from "react";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 import "./style.scss";
 import novaviLogo from "@app/assets/novavi-logo.png";
@@ -79,7 +81,7 @@ export default function Header(props: CSSProperties) {
           role="button"
          >
           About Us
-          <span className="mega-indicator" >&#xF140;</span>
+          <ArrowDropDownIcon />
          </a>
          <ul className="mega-sub-menu">
           <li
@@ -114,7 +116,7 @@ export default function Header(props: CSSProperties) {
         >
          <a
           className="mega-menu-link"
-          href="services/index.html"
+          href="services"
           tabIndex={0}
          >
           Services
@@ -126,7 +128,7 @@ export default function Header(props: CSSProperties) {
         >
          <a
           className="mega-menu-link"
-          href="works/index.html"
+          href="works"
           tabIndex={0}
          >
           Portfolio
@@ -137,13 +139,19 @@ export default function Header(props: CSSProperties) {
      </div>
      <div className="col">
       <h6>
-       <i className="fas fa-phone-alt" />
+       <PhoneIcon sx={{
+        fontSize: "20px",
+        fontWeight: "900"
+       }}/>
        <a href="tel:+917736013411">+91 7736013411</a>
       </h6>
       <a href="contact-us/index.html" className="contact-btn">
        Contact Us
       </a>
       <button className="hamburgermenu">
+       <span></span>
+       <span></span>
+       <span></span>
       </button>
      </div>
     </div>
