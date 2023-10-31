@@ -135,7 +135,17 @@ export default function Header(props: CSSProperties) {
        </ul>
       </div>
      </div>
-     <div className="col"></div>
+     <div className="col">
+      <h6>
+       <i className="fas fa-phone-alt" />
+       <a href="tel:+917736013411">+91 7736013411</a>
+      </h6>
+      <a href="contact-us/index.html" className="contact-btn">
+       Contact Us
+      </a>
+      <button className="hamburgermenu">
+      </button>
+     </div>
     </div>
    </div>
   </div>

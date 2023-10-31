@@ -41,65 +41,82 @@
 
         .mega-menu-wrap {
           height: 36px;
-         width: 100%;
-
-         .mega-menu-toggle {
-          display: none;
-         }
-         .mega-menu {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-          height: 100%;
           width: 100%;
-          font-size: 14px;
-          color: $headingColor;
 
-          .mega-menu-item {
-           // flex: 1;
-
-          .mega-indicator {
-            display: inline-block;
-            width: auto;
-            background: transparent;
-            font-family: dashicons;
-            position: relative;
-            pointer-events: auto;
-            left: auto;
-            min-width: auto;
-            font-size: inherit;
-            padding: 0;
-            margin: 0 0 0 6px;
-            height: auto;
-            line-height: inherit;
-            color: inherit;
-        }
-
-          .mega-indicator::after {
-            content: #{'"' + \F140 + '"'};
-            font-weight: normal;
-            display: inline-block;
-            margin: 0;
-            vertical-align: top;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            transform: rotate(0);
-            color: inherit;
-            position: relative;
-            background: transparent;
-            height: auto;
-            width: auto;
-            right: auto;
-            line-height: inherit;
-        }
-
-           .mega-sub-menu {
+          .mega-menu-toggle {
             display: none;
-           }
-          } 
-         }
+          }
+          .mega-menu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+            width: 100%;
+            font-size: 14px;
+            color: $headingColor;
+
+            .mega-menu-item {
+              // flex: 1;
+
+              .mega-indicator {
+                display: inline-block;
+                width: auto;
+                background: transparent;
+                font-family: dashicons;
+                position: relative;
+                pointer-events: auto;
+                left: auto;
+                min-width: auto;
+                font-size: inherit;
+                padding: 0;
+                margin: 0 0 0 6px;
+                height: auto;
+                line-height: inherit;
+                color: inherit;
+              }
+
+              .mega-indicator::after {
+                content: #{'"' + \F140+ '"'};
+                font-weight: normal;
+                display: inline-block;
+                margin: 0;
+                vertical-align: top;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                transform: rotate(0);
+                color: inherit;
+                position: relative;
+                background: transparent;
+                height: auto;
+                width: auto;
+                right: auto;
+                line-height: inherit;
+              }
+
+              .mega-sub-menu {
+                display: none;
+              }
+            }
+          }
         }
+      }
+      .col:nth-child(3) {
+        .fas {
+          font-weight: 900;
+          font-family: "Font Awesome 5 Free";
+          color: $YellowColor;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+          display: inline-block;
+          font-style: normal;
+          font-variant: normal;
+          text-rendering: auto;
+          line-height: 1;
+        }
+        .fas:before {
+          content: "\f879";
+      }
       }
     }
   }
