@@ -17,11 +17,11 @@
     width: 100%;
     max-width: 1240px;
     margin-inline: 0;
-    
+
     .row {
       display: flex;
       flex-wrap: wrap;
-      
+
       .col {
         flex: 0 0 33.33333%;
         padding-bottom: 0;
@@ -64,10 +64,41 @@
               justify-content: center;
               height: 100%;
               text-align: center;
+              position: relative;
 
               .mega-sub-menu {
-                display: none;
+                // display: none;
+                // opacity: 0;
+                position: absolute;
+                // height: 118px;
+                width: 180px;
+                padding: 2px;
+                border: 0;
+                border-radius: 8px;
+                background-color: $YellowColor;
+
+                .mega-menu-item:first-child {
+                  border-radius: 6px 6px 0 0;
+                }
+                .mega-menu-item {
+                  height: 38px;
+                  width: 100%;
+                  font-size: 14px;
+                  line-height: 1.7;
+                  vertical-align: baseline;
+                  color: $DarkFont;
+
+                  .mega-menu-link {
+                    height: 100%;
+                    width: 100%;
+                    text-align: left;
+                  }
+                }
+                .mega-menu-item:last-child {
+                  border-radius: 0 0 6px 6px;
+                }
               }
+              // .mega-sub-menu > 
             }
             .mega-menu-item:hover {
               color: $YellowColor;
@@ -103,10 +134,10 @@
           border-radius: 18px;
           font-weight: 600;
           font-size: 15px;
-          font-family: 'Open Sans', sans-serif !important;
+          font-family: "Open Sans", sans-serif !important;
           cursor: pointer;
         }
-        .hamburgermenu{
+        .hamburgermenu {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -119,6 +150,14 @@
           height: 2px;
           width: 24px;
           background-color: $headingColor;
+          animation-name: hambergerAnimation;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          transform-origin: 100%;
+        }
+        .hamburgermenu > span:nth-child(2) {
+          animation-delay: 0.5s;
         }
       }
     }
@@ -137,5 +176,14 @@
         width: auto !important;
       }
     }
+  }
+}
+
+@keyframes hambergerAnimation {
+  0% {
+    transform: scaleX(0.4);
+  }
+  100% {
+    transform: scaleY(1);
   }
 }
