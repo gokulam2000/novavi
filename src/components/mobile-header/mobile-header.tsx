@@ -23,12 +23,11 @@ export default function MobileHeader({ mobileToggle, setMobileTogge }: PropType)
     <div className="row">
      <div className="mobileleft-menu">
       <div className="mobile-menu-wrap">
-       <span>
         <div className="menu-mobile-menu-container">
          <ul id="menu-mobile-menu" className="menu">
           <li
            id="menu-item-49"
-           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-49"
+           className="menu-item current-menu-item"
           >
            <a href="/" aria-current="page">
             Home
@@ -36,43 +35,42 @@ export default function MobileHeader({ mobileToggle, setMobileTogge }: PropType)
           </li>
           <li
            id="menu-item-51"
-           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"
+           className="menu-item"
           >
            <a href="/about-us">About Us</a>
           </li>
           <li
            id="menu-item-54"
-           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"
+           className="menu-item"
           >
            <a href="/services">Services</a>
           </li>
           <li
            id="menu-item-53"
-           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"
+           className="menu-item"
           >
            <a href="/works">Portfolio</a>
           </li>
           <li
            id="menu-item-55"
-           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"
+           className="menu-item"
           >
            <a href="/testimonials">Testimonials</a>
           </li>
           <li
            id="menu-item-50"
-           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"
+           className="menu-item"
           >
            <a href="/blog">Blog</a>
           </li>
           <li
            id="menu-item-52"
-           className="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"
+           className="menu-item"
           >
            <a href="/contact-us">Contact Us</a>
           </li>
          </ul>
         </div>
-       </span>
       </div>
      </div>
      {/* <div className="col-lg-8">
