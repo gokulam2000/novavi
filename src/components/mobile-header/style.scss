@@ -1,0 +1,12 @@
+@import "@app/main.scss";
+
+.mobile-menu-wrapper {
+    position: fixed;
+    width: 100%;
+    z-index: 1050;
+    left: 0;
+    top: 100%;
+    background-color: red;
+    transition-duration: 0.3s;
+    background-color: $header-background;
+}

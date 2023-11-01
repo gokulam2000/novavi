@@ -12,11 +12,11 @@
   z-index: 1045;
   padding-top: 40px;
   transition-duration: 0.3s;
-
+  
   .container {
     width: 100%;
     max-width: 1240px;
-    margin-inline: 0;
+    margin-inline: auto;
 
     .row {
       display: flex;
@@ -68,37 +68,55 @@
 
               .mega-sub-menu {
                 // display: none;
-                // opacity: 0;
+                opacity: 0;
+                visibility: hidden;
                 position: absolute;
-                // height: 118px;
+                transform: translate(0,10px);
                 width: 180px;
                 padding: 2px;
                 border: 0;
                 border-radius: 8px;
+                z-index: 999;
+                top: 36px;
+                right: -42px;
+                left: auto;
+                bottom: auto;
                 background-color: $YellowColor;
+                transition: opacity 200ms ease-in, transform 200ms ease-in, visibility 200ms ease-in;
 
                 .mega-menu-item:first-child {
                   border-radius: 6px 6px 0 0;
                 }
                 .mega-menu-item {
-                  height: 38px;
                   width: 100%;
                   font-size: 14px;
                   line-height: 1.7;
                   vertical-align: baseline;
-                  color: $DarkFont;
+                  color: $linkTextColor;
+
+                  &:hover {
+                    color: $YellowColor;
+                    background-color: $forground;
+                  }
 
                   .mega-menu-link {
-                    height: 100%;
+                    // height: 100%;
+                    padding-inline: 10px;
+                    line-height: 38px;
                     width: 100%;
                     text-align: left;
+                    vertical-align: baseline;
                   }
                 }
                 .mega-menu-item:last-child {
                   border-radius: 0 0 6px 6px;
                 }
               }
-              // .mega-sub-menu > 
+              &:hover > .mega-sub-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0,0);
+              }
             }
             .mega-menu-item:hover {
               color: $YellowColor;
@@ -165,7 +183,7 @@
 }
 
 .f-nav {
-  background-color: var(--header-background);
+  background-color: $header-background;
   padding-bottom: 8px;
   padding-top: 8px;
 
@@ -177,6 +195,44 @@
       }
     }
   }
+}
+
+@media (max-width: 992px) {
+  .header-wrapper {
+    .container {
+      .row {
+        .col:first-child {
+          flex: 1 1 50%;
+        }
+        .col:nth-child(2) {
+          display: none;
+        }
+        .col:nth-child(3) {
+          flex: 1 1 50%;
+          justify-content: flex-end;
+          gap: 36px;
+
+          h6 {
+            display: none;
+          }
+        }
+      }}}
+}
+
+@media (max-width: 576px) {
+  .header-wrapper {
+    .container {
+      .row {
+        .col:first-child {
+          flex: 0 0 66.6666%;
+        }
+        .col:nth-child(3) {
+          flex: 1 1 33.3333%;
+          .contact-btn {
+            display: none;
+          }
+        }
+      }}}
 }
 
 @keyframes hambergerAnimation {
