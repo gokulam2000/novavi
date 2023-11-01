@@ -1,15 +1,20 @@
 "use client"
 import Image from "next/image";
-import { useEffect, useRef, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef } from "react";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import PhoneIcon from '@mui/icons-material/Phone';
 
 import "./style.scss";
 import novaviLogo from "@app/assets/novavi-logo.png";
 
-export default function Header({ mobileToggle, setMobileTogge}) {
-    function openMenu() {
+type PropType = {
+    mobileToggle: Boolean,
+    setMobileTogge: Dispatch<SetStateAction<Boolean>>
+}
 
+export default function Header({ mobileToggle, setMobileTogge}:PropType) {
+    function openMenu() {
+        setMobileTogge(!mobileToggle);
     }
  const scrollRef = useRef<HTMLDivElement>(null!);
  useEffect(() => {

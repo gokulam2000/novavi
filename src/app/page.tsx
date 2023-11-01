@@ -12,7 +12,7 @@ export default function App() {
     <main className="min-h-screen">
       <Circle />
       <Header mobileToggle={mobileToggle} setMobileTogge={setMobileTogge}/>
-      <MobileHeader />
+      <MobileHeader mobileToggle={mobileToggle} setMobileTogge={setMobileTogge} />
       <div style={{ height: "200vh" }}>
       </div>
     </main>

@@ -1,12 +1,56 @@
 @import "@app/main.scss";
 
 .mobile-menu-wrapper {
-    position: fixed;
-    width: 100%;
-    z-index: 1050;
-    left: 0;
-    top: 100%;
-    background-color: red;
-    transition-duration: 0.3s;
-    background-color: $header-background;
+ position: fixed;
+ width: 100%;
+ z-index: 1050;
+ left: 0;
+ top: 100%;
+ padding: 0;
+ transition-duration: 0.3s;
+ background-color: $header-background;
+
+ .menuclose-btn {
+  all: unset;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  height: 66px;
+  width: 66px;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+
+  svg {
+   height: 66px;
+   width: 66px;
+
+   path {
+    fill: $textcolor;
+    height: 66px;
+    width: 66px;
+   }
+  }
+
+ }
+
+ .menuclose-btn:hover {
+  transform: rotate(-90deg);
+
+  svg {
+   path {
+    fill: $YellowColor;
+   }
+  }
+ }
+
+ .row {
+  display: flex;
+  flex-direction: row;
+
+  .mobileleft-menu {
+   flex: 0 0 33.3333%;
+   background-color: $YellowColor;
+  }
+ }
 }
