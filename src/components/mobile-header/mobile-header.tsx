@@ -83,7 +83,7 @@ export default function MobileHeader({ mobileToggle, setMobileTogge }: PropType)
                 of Customized Services and Solutions
               </h2>
               <div className="row">
-                <div className="col-lg-4 col-md-4">
+                <div className="col-item-mob">
                   <a
                     href="service/digital-marketing"
                     className="digital-marketing"
@@ -97,7 +97,7 @@ export default function MobileHeader({ mobileToggle, setMobileTogge }: PropType)
                     </span>
                   </a>
                 </div>
-                <div className="col-lg-4 col-md-4">
+                <div className="col-item-mob">
                   <a
                     href="service/website-designing"
                     className="website-designing"
@@ -111,13 +111,13 @@ export default function MobileHeader({ mobileToggle, setMobileTogge }: PropType)
                     </span>
                   </a>
                 </div>
-                <div className="col-lg-4 col-md-4">
+                <div className="col-item-mob">
                   <a
                     href="service/software-development"
                     className="software-development"
                   >
                     <span>
-                      <span>
+                      <span className="softwaredevelopment-svg">
                         <Development />
                       </span>
                       <h6>Software</h6>
