@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev:next": "next dev",
-    "dev": "ts-node --require tsconfig-paths/register --project tsconfig.server.json server/server.ts",
-    "dev:nodemon": "nodemon -- exec 'ts-node' server/server.ts",
+    "dev": "bash script.sh Starting && ts-node --require tsconfig-paths/register --project tsconfig.server.json server/server.ts",
+    "dev:nodemon": "bash script.sh Starting && nodemon -- exec 'ts-node' server/server.ts",
     "build:server": "tsc --project tsconfig.server.json",
     "build:next": "next build",
-    "build": "npm run build:next && npm run build:server",
+    "build": "bash script.sh Building && npm run build:next && npm run build:server",
     "start": "NODE_ENV=production node dist/server.js",
     "start:next": "next start",
     "lint": "next lint"
@@ -25,6 +25,7 @@
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.69.3",
+    "sharp": "^0.32.6",
     "tsconfig-paths": "^4.2.0"
   },
   "devDependencies": {
