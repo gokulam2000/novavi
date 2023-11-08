@@ -7,7 +7,7 @@ import favicon from "/public/favicon.ico";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Novavi',
+  title: 'Feed | Novavi',
   description: 'Digital Destiny: Your Journey to Online Prominence',
   icons: [{ rel: "icon", url: favicon.src }]
 }

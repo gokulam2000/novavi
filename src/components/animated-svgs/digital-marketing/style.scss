@@ -1,0 +1,24 @@
+@import "@app/main.scss";
+
+.digital-marketing-svg {
+    height: 90px;
+    
+    #Layer_2 {
+        fill: $headingColor;
+    }
+    #media {
+        transform-origin: center;
+        transform-box: fill-box;
+        animation: 6s linear infinite media-anim;
+        fill: $Color1;
+    }
+}
+
+@keyframes media-anim {
+    0%, 60% {
+        transform: rotateY(0deg);
+    }
+    30% {
+        transform: rotateY(180deg);
+    }
+}
