@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import "./style.scss";
 import GirlWithPhone from "@app/assets/img/girlwith-phone.png";
 import AdsIcon from "@app/assets/img/ads-icon.png";
 import GirlImage from "@app/assets/img/girl-image.png";
@@ -16,7 +17,7 @@ export default function Home() {
    <div className="banner-shades-left">
     <div className="shades-left-middle">
      <div className="row">
-      <div className="col-6">
+      <div className="col">
        <div className="banner-icon-one">
         <Image
          src={GirlWithPhone}
@@ -32,8 +33,8 @@ export default function Home() {
         />
        </div>
        <div className="banner-icon-three">
-        <img
-         src="wp-content/themes/novavi/assets/img/girl-image.png"
+        <Image
+         src={GirlImage}
          alt="novavi"
         />
        </div>
@@ -46,22 +47,22 @@ export default function Home() {
      <div className="row">
       <div className="col-6">
        <div className="banner-icon-five">
-        <img
-         src="wp-content/themes/novavi/assets/img/plant-image.svg"
+        <Image
+         src={PlantImage}
          alt="Novavi"
         />
        </div>
        <div className="banner-icon-six">
-        <img
-         src="wp-content/themes/novavi/assets/img/web-icon.png"
+        <Image
+         src={WebIcon}
          alt="novai"
         />
        </div>
       </div>
       <div className="col-6">
        <div className="banner-icon-four">
-        <img
-         src="wp-content/themes/novavi/assets/img/boywith-laptop.png"
+        <Image
+         src={BoyWithLaptop}
          alt="novavi"
         />
        </div>
@@ -86,8 +87,8 @@ export default function Home() {
         </h2>
        </span>
       </div>
-      <img
-       src="wp-content/themes/novavi/assets/img/banner-image.jpg"
+      <Image
+       src={BannerImage}
        alt="Novavi"
       />
      </div>
@@ -100,8 +101,8 @@ export default function Home() {
         </h2>
        </span>
       </div>
-      <img
-       src="wp-content/themes/novavi/assets/img/banner-image2.jpg"
+      <Image
+       src={BannerImage2}
        alt="Novavi"
       />
      </div>
@@ -114,8 +115,8 @@ export default function Home() {
         </h2>
        </span>
       </div>
-      <img
-       src="wp-content/themes/novavi/assets/img/banner-image3.jpg"
+      <Image
+       src={BannerImage3}
        alt="Novavi"
       />
      </div>
