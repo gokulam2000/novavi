@@ -2,108 +2,337 @@
 
 
 .banner-wrapper-con {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+ width: 100%;
+ position: relative;
+ overflow: hidden;
 
-    &::before {
-        content: "";
-        width: 100%;
-        height: 220px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 100;
-        background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+ &::before {
+  content: "";
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+ }
+
+ .banner-shades-left {
+  width: 355px;
+  height: 100vh;
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding-top: 110px;
+
+  .shades-left-middle {
+   width: 100%;
+   vertical-align: middle;
+   display: table-cell;
+
+   .row {
+    margin-inline: -10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .col-one {
+     position: relative;
+     padding-left: 10px;
+     padding-right: 10px;
+     flex: 0 0 50%;
+     max-width: 50%;
+
+     .banner-icon-one {
+      position: relative;
+      width: 100%;
+      height: 360px;
+      border: 2px solid $YellowColor;
+      animation: boxone-anim 9s infinite alternate;
+      border-radius: 10px 10px 130px 0px;
+      overflow: hidden;
+
+      img {
+       padding: 0;
+       width: 294px;
+       max-width: 294px;
+       height: 501px;
+       position: absolute;
+       top: 20px;
+       right: -30px;
+       vertical-align: middle;
+       border-style: none;
+       animation: girl-withphone 7s infinite alternate;
+      }
+     }
     }
-    .banner-shades-left {
-        width: 355px;
-        height: 100vh;
-        display: table;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        padding-top: 110px;
+    .col-two {
+     padding-left: 10px;
+     padding-right: 10px;
+     flex: 0 0 50%;
+     min-width: 50%;
+     position: relative;
 
-        .shades-left-middle {
-            width: 100%;
-            vertical-align: middle;
-            display: table-cell;
+     .banner-icon-two {
+      height: 185px;
+      width: 185px;
+      background-color: $Color1;
+      border-radius: 50% 50% 50% 10px;
+      position: relative;
+      overflow: hidden;
+      animation: ads-anim 5s infinite alternate;
 
-            .row {
-                margin-inline: -10px;
-                display: flex;
-                flex-wrap: wrap;
+      img {
+       width: 104px;
+       height: 100px;
+       position: absolute;
+       left: 30px;
+       bottom: 30px;
+       vertical-align: middle;
+       border-style: none;
+      }
+     }
+     .banner-icon-three {
+      width: 100%;
+      height: 300px;
+      border: 2px solid $Color2;
+      margin-top: 20px;
+      border-radius: 10px 80px 80px 80px;
+      position: relative;
+      overflow: hidden;
 
-                .col {
-                    position: relative;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    flex: 0 0 50%;
-                    max-width: 50%;
-
-                    .banner-icon-one {
-                        position: relative;
-                        width: 100%;
-                        height: 360px;
-                        border: 2px solid $YellowColor;
-                        animation: boxone-anim 9s infinite alternate;
-                        border-radius: 10px 10px 130px 0px;
-                        overflow: hidden;
-
-                        img {
-                            padding: 0;
-                            width: 294px;
-                            max-width: 294px;
-                            height: 501px;
-                            position: absolute;
-                            top: 20px;
-                            right: -30px;
-                            vertical-align: middle;
-                            border-style: none;
-                            animation: girl-withphone 7s infinite alternate;
-                        }
-                    }
-                }
-            }
-        }
+      img {
+       width: 121px;
+       height: 212px;
+       position: absolute;
+       left: 20px;
+       top: 70px;
+       animation: girl-anim 10s infinite alternate;
+      }
+     }
     }
-    .banner-shades-right {
-        display: none;
+   }
+  }
+ }
+
+ .banner-shades-right {
+  width: 355px;
+  height: 100vh;
+  display: table;
+  position: absolute;
+  right: 0px;
+  top:0px;
+  z-index: 100;
+  padding-top: 110px;
+
+  .shades-left-middle {
+   width: 100%;
+   display: table-cell;
+   vertical-align: middle;
+
+   .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    .col-one {
+     padding-left: 10px;
+     padding-right: 10px;
+     flex: 0 0 50%;
+     min-width: 50%;
+     position: relative;
+
+     .banner-icon-five {
+      width: 100%;
+      height: 300px;
+      border: 2px solid $Color3;
+      border-radius: 80px 80px 10px 80px;
+      position: relative;
+      overflow: hidden;
+
+      img {
+       width: 196px;
+       max-width: 196px;
+       height: 232px;
+       position: absolute;
+       left: 20px;
+       top: 60px;
+       vertical-align: middle;
+       border-style: none;
+       animation: plant-anim 8s infinite alternate;
+      }
+     }
+     .banner-icon-six {
+      width: 185px;
+      height: 185px;
+      background-color: $Color4;
+      border-radius: 50% 10px 50% 50%;
+      margin-top: 20px;
+      float: right;
+      position: relative;
+      animation: boxsix-anim 8s infinite alternate;
+
+      img {
+       width: 90px;
+       height: 87px;
+       position: absolute;
+       left: 50px;
+       bottom: 50px;
+       vertical-align: middle;
+       border-style: none;
+      }
+     }
     }
+    .col-two {
+     padding-left: 10px;
+     padding-right: 10px;
+     flex: 0 0 50%;
+     max-width: 50%;
+     position: relative;
+
+     .banner-icon-four {
+      width: 100%;
+      height: 360px;
+      border: 2px solid $YellowColor;
+      border-radius: 130px 10px 0px 10px;
+      position: relative;
+      overflow: hidden;
+      animation: boylaptop-anim 10s infinite alternate;
+
+      img {
+       width: 174px;
+       height: 274px;
+       position: absolute;
+       left: 45px;
+       top: 60px;
+       vertical-align: middle;
+       border-style: none;
+       animation: girl-anim 10s infinite alternate;
+      }
+     }
+    }
+   }
+  }
+ }
 }
 
 @keyframes boxone-anim {
-    0%, 100% {
-        top: 90px;
-    }
-    50% {
-        top: 0px;
-    }
+
+ 0%,
+ 100% {
+  top: 90px;
+ }
+
+ 50% {
+  top: 0px;
+ }
 }
+
 @keyframes girl-withphone {
-    0% {
-        top: 20px;
-        right: -30px;
-        transform: rotate(0deg);
-    }
-    25% {
-        top: 40px;
-        right: -40px;
-        transform: rotate(-5deg);
-    }
-    50% {
-        top: 10px;
-        right: -10px;
-        transform: rotate(0deg);
-    }
-    75% {
-        top: 50px;
-        right: -50px;
-    }
-    100% {
-        top: 20px;
-        right: -30px;
-    }
+ 0% {
+  top: 20px;
+  right: -30px;
+  transform: rotate(0deg);
+ }
+
+ 25% {
+  top: 40px;
+  right: -40px;
+  transform: rotate(-5deg);
+ }
+
+ 50% {
+  top: 10px;
+  right: -10px;
+  transform: rotate(0deg);
+ }
+
+ 75% {
+  top: 50px;
+  right: -50px;
+ }
+
+ 100% {
+  top: 20px;
+  right: -30px;
+ }
+}
+
+@keyframes ads-anim {
+ 0% {
+  transform: rotateY(0deg);
+ }
+ 30% {
+  transform: rotateY(180deg);
+ }
+ 60% {
+  transform: rotateY(0deg);
+ }
+ 100% {
+  transform: rotateY(0deg);
+ }
+}
+
+@keyframes girl-anim {
+ 0% {
+  top: 20px;
+ }
+ 50% {
+  top: 70px;
+ }
+ 100% {
+  top: 20px;
+ }
+}
+
+@keyframes plant-anim {
+ 0% {
+  top: 60px;
+ }
+ 50% {
+  top: 20px;
+ }
+ 100% {
+  top: 60px;
+ }
+}
+@keyframes boxsix-anim {
+ 0% {
+  transform: rotateY(0deg);
+ }
+ 40% {
+  transform: rotateY(180deg);
+ }
+ 80% {
+  transform: rotateY(0deg);
+ }
+ 100% {
+  transform: rotateY(0deg);
+ }
+}
+
+@keyframes boylaptop-anim {
+ 0% {
+  top: 0px;
+ }
+ 50% {
+  top: 90px;
+ }
+ 100% {
+  top: 0px;
+ }
+}
+
+@keyframes girl-anim {
+ 0% {
+  top: 20px;
+ }
+ 50% {
+  top: 70px;
+ }
+ 100% {
+  top: 20px;
+ }
 }

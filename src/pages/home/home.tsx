@@ -17,7 +17,7 @@ export default function Home() {
    <div className="banner-shades-left">
     <div className="shades-left-middle">
      <div className="row">
-      <div className="col">
+      <div className="col-one">
        <div className="banner-icon-one">
         <Image
          src={GirlWithPhone}
@@ -25,7 +25,7 @@ export default function Home() {
         />
        </div>
       </div>
-      <div className="col-6">
+      <div className="col-two">
        <div className="banner-icon-two">
         <Image
          src={AdsIcon}
@@ -45,7 +45,7 @@ export default function Home() {
    <div className="banner-shades-right">
     <div className="shades-left-middle">
      <div className="row">
-      <div className="col-6">
+      <div className="col-one">
        <div className="banner-icon-five">
         <Image
          src={PlantImage}
@@ -59,7 +59,7 @@ export default function Home() {
         />
        </div>
       </div>
-      <div className="col-6">
+      <div className="col-two">
        <div className="banner-icon-four">
         <Image
          src={BoyWithLaptop}
@@ -80,7 +80,7 @@ export default function Home() {
     <div className="carousel-inner">
      <div className="carousel-item active">
       <div className="banner-caption-con parallax-wrap">
-       <span className="parallax-span" value={3}>
+       <span className="parallax-span">
         <h2>
          Web <b>Designing</b> Brilliance <br />
          Delivered Right to You
@@ -94,7 +94,7 @@ export default function Home() {
      </div>
      <div className="carousel-item">
       <div className="banner-caption-con parallax-wrap">
-       <span className="parallax-span" value={3}>
+       <span className="parallax-span">
         <h2>
          Digital <b>Marketing</b> Excellence <br />
          at Your Service
@@ -108,7 +108,7 @@ export default function Home() {
      </div>
      <div className="carousel-item">
       <div className="banner-caption-con parallax-wrap">
-       <span className="parallax-span" value={3}>
+       <span className="parallax-span">
         <h2>
          Crafting <b>Software</b> Solutions with <br />
          Expertise &amp; Precision
