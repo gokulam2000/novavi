@@ -5,6 +5,7 @@ import "./style.scss";
 import Header from "@app/components/header/header";
 import MobileHeader from "@app/components/mobile-header/mobile-header";
 import Circle from "@app/components/circle/circle";
+import Home from "@app/pages/home/home";
 
 export default function App() {
   const [mobileToggle, setMobileTogge] = useState<Boolean>(false);
@@ -13,8 +14,7 @@ export default function App() {
       <Circle />
       <Header mobileToggle={mobileToggle} setMobileTogge={setMobileTogge}/>
       <MobileHeader mobileToggle={mobileToggle} setMobileTogge={setMobileTogge} />
-      <div style={{ height: "200vh" }}>
-      </div>
+      <Home />
     </main>
   )
 }
