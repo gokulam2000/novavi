@@ -9,7 +9,7 @@
     "build:server": "tsc --project tsconfig.server.json",
     "build:next": "next build",
     "build": "npm run build:next && npm run build:server",
-    "start": "NODE_ENV=production node dist/server.js",
+    "start": "npx cross-env NODE_ENV=production node dist/server.js",
     "start:next": "next start",
     "lint": "next lint"
   },
