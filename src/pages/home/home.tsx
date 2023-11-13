@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useEffect } from "react";
 
 import "./style.scss";
 import GirlWithPhone from "@app/assets/img/girlwith-phone.png";
@@ -12,6 +13,20 @@ import BannerImage2 from "@app/assets/img/banner-image2.jpg";
 import BannerImage3 from "@app/assets/img/banner-image3.jpg";
 
 export default function Home() {
+ useEffect(() => {
+  if (window.innerWidth > 1025) {
+   document.addEventListener("mousemove", parallax);
+
+  }
+  function parallax(event: MouseEvent) {
+   document.querySelectorAll(".parallax-wrap span").forEach((shift: Node) => {
+    const position = 3;
+    const x = (window.innerWidth - event.pageX * position) / 90;
+    const y = (window.innerHeight - event.pageY * position) / 90;
+    (shift as HTMLElement).style.transform = `translateX(${x}px) translateY(${y}px)`;
+   });
+  }
+ }, []);
  return (
   <section className="banner-wrapper-con">
    <div className="banner-shades-left">
@@ -71,11 +86,7 @@ export default function Home() {
     </div>
    </div>
    <div
-    id="carouselExampleControls"
     className="carousel slide carousel-fade"
-    data-ride="carousel"
-    data-interval={4000}
-    data-pause="false"
    >
     <div className="carousel-inner">
      <div className="carousel-item active">
@@ -123,6 +134,5 @@ export default function Home() {
     </div>
    </div>
   </section>
-
  );
 }

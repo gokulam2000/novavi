@@ -221,6 +221,12 @@
   }
  }
 
+ @media (max-width: 992px) {
+  .banner-shades-left, .banner-shades-right {
+    display: none;
+  }
+ }
+
  .carousel {
   position: relative;
 
@@ -243,19 +249,18 @@
     animation-iteration-count: infinite;
 
     &:first-child {
-     // display: none;
      animation-name: carousel;
      animation-duration: 12s;
     }
     &:nth-child(2) {
      animation-name: carousel;
      animation-duration: 12s;
-     animation-delay: 3.36s;
+     animation-delay: 4s;
     }
     &:last-child {
      animation-name: carousel;
      animation-duration: 12s;
-     animation-delay: 6.72s;
+     animation-delay: 8s;
     }
 
     .banner-caption-con {
@@ -295,6 +300,11 @@
         font-weight: 7000;
        }
       }
+      @media (max-width: 992px) {
+        h2 {
+          font-size: 42px;
+        }
+      }
      }
     }
 
@@ -309,13 +319,10 @@
 }
 
 @keyframes carousel{
- 0%,28% {
+ 5%,28% {
   opacity: 1;
  }
- 38% {
-  opacity: 0;
- }
- 100% {
+ 38%, 95% {
   opacity: 0;
  }
 }
