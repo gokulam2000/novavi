@@ -6,6 +6,7 @@ import Header from "@app/components/header/header";
 import MobileHeader from "@app/components/mobile-header/mobile-header";
 import Circle from "@app/components/circle/circle";
 import Home from "@app/pages/home/home";
+import ScrollIcon from "@app/components/scoll-icon/scroll-icon";
 
 export default function App() {
   const [mobileToggle, setMobileTogge] = useState<Boolean>(false);
@@ -15,6 +16,7 @@ export default function App() {
       <Header mobileToggle={mobileToggle} setMobileTogge={setMobileTogge}/>
       <MobileHeader mobileToggle={mobileToggle} setMobileTogge={setMobileTogge} />
       <Home />
+      <ScrollIcon />
     </main>
   )
 }
