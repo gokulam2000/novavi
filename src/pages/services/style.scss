@@ -1,0 +1,55 @@
+@import "@app/main.scss";
+
+.services-wrapper {
+    margin-top: 110px;
+
+    .container {
+        width: 100%;
+        max-width: 1240px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .row-service {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+
+            .col-service {
+                flex: 0 0 66.66667%;
+                max-width: 66.66667%;
+                position: relative;
+                padding-right: 15px;
+                padding-left: 15px;
+
+                .homepage-heading {
+                    text-align: left;
+                    font-size: 34px;
+                    margin: 0 0 45px 0;
+                    color: $headingColor;
+                    line-height: 1.2;
+                    font-family: 'Open Sans', sans-serif !important;
+
+                    b {
+                        color: $Color1;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .services-wrapper {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 520px) {
+    .services-wrapper {
+        margin-top: 70px;
+    }
+}
