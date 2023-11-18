@@ -289,20 +289,26 @@
        width: 100%;
        padding: 0;
        margin: 0;
-       font-weight: 300;
+       font-weight: 100 !important;
        font-size: 3vw;
        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
        line-height: 1.2;
        color: $headingColor;
+       font-family: 'Open Sans', sans-serif !important;
 
        b {
         color: $YellowColor;
-        font-weight: 7000;
+        font-weight: 700;
        }
       }
       @media (max-width: 992px) {
         h2 {
           font-size: 42px;
+        }
+      }
+      @media (max-width: 520px) {
+        h2 {
+          font-size: 28px;
         }
       }
      }

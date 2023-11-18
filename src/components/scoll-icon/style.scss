@@ -29,13 +29,52 @@
             background: "@app/assets/img/mouse-icon.png" no-repeat;
             transition-duration: 0s;
             text-decoration: none;
+            overflow: hidden;
 
-            svg {
-                width: 18px;
-                height: 24px;
-                fill: $headingColor;
+            img {
+                position: absolute;
+                &:hover {
+                    bottom: 0;
+                }
             }
         }
+        svg {
+            height: 85px;
+            position: relative;
+            z-index: 990;
+            overflow: hidden;
+            vertical-align: middle;
+
+            .st0 {
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                fill: $YellowColor;
+                animation: 20s linear infinite scrollbg-anim;
+            }
+            .st1 {
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                fill: $background;
+            }
+        }
+    }
+}
+
+@keyframes scrollbg-anim {
+    0% {
+        fill: $YellowColor;
+    }
+    25% {
+        fill: $Color1;
+    }
+    50% {
+        fill: $Color2;
+    }
+    75% {
+        fill: $Color3;
+    }
+    100% {
+        fill: $Color4;
     }
 }
 

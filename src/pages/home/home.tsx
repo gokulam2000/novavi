@@ -93,8 +93,8 @@ export default function Home() {
       <div className="banner-caption-con parallax-wrap">
        <span className="parallax-span">
         <h2>
-         Web <b>Designing</b> Brilliance <br />
-         Delivered Right to You
+         Web <b>Designing</b> Brilliance Delivered<br />
+          Right to You
         </h2>
        </span>
       </div>
@@ -107,8 +107,8 @@ export default function Home() {
       <div className="banner-caption-con parallax-wrap">
        <span className="parallax-span">
         <h2>
-         Digital <b>Marketing</b> Excellence <br />
-         at Your Service
+         Digital <b>Marketing</b> Excellence at<br />
+          Your Service
         </h2>
        </span>
       </div>
