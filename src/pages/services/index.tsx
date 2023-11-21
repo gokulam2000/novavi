@@ -1,10 +1,17 @@
+import { useEffect } from "react";
+
 import "./style.scss";
+// import "./aos.scss";
+// import animater from "./aos.js";
 import DigitalMarketing from "@app/components/animated-svgs/digital-marketing/digital-marketing-svg";
 import Designing from "@app/components/animated-svgs/designing/designing-svg";
 import Development from "@app/components/animated-svgs/development/development-svg";
 
 
 export default function Service() {
+    // useEffect(() => {
+    //     animater();
+    // });
  return (
   <section className="services-wrapper">
    <a id="about"></a>
