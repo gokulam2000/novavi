@@ -19,6 +19,7 @@ export default function App() {
       <Home />
       <ScrollIcon />
       <Service/>
+      Text to test
     </main>
   )
 }
