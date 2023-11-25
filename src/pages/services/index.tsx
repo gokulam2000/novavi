@@ -8,22 +8,23 @@ import Designing from "@app/components/animated-svgs/designing/designing-svg";
 import Development from "@app/components/animated-svgs/development/development-svg";
 
 export default function Service() {
-  function reveal() {
-    let reveals =  document.querySelectorAll(".reveals");
 
-    reveals.forEach((element) => {
-      let windowHeight = window.innerHeight;
-      let elementTop = element?.getBoundingClientRect().top!;
-      let elementVisible = 150;
-
-      if (elementTop < windowHeight - elementVisible) {
-        element?.classList.add("aos-animate");
-      } else {
-        element?.classList.remove("aos-animate");
-      }
-    });
-  }
   useEffect(() => {
+    function reveal() {
+      let reveals =  document.querySelectorAll(".reveals");
+  
+      reveals.forEach((element) => {
+        let windowHeight = window.innerHeight;
+        let elementTop = element?.getBoundingClientRect().top!;
+        let elementVisible = 150;
+  
+        if (elementTop < windowHeight - elementVisible) {
+          element?.classList.add("aos-animate");
+        } else {
+          element?.classList.remove("aos-animate");
+        }
+      });
+    }
     document.querySelector("body")?.addEventListener("scroll", reveal);
   });
   return (
