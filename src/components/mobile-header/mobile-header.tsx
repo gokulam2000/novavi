@@ -1,4 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
+import Link from "next/link";
 
 import "./style.scss";
 import Services from "./services/services";
@@ -30,45 +31,45 @@ export default function MobileHeader({ mobileToggle, setMobileTogge }: PropType)
                     id="menu-item-49"
                     className="menu-item current-menu-item"
                   >
-                    <a href="/" aria-current="page">
+                    <Link href="/" aria-current="page">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li
                     id="menu-item-51"
                     className="menu-item"
                   >
-                    <a href="/about-us">About Us</a>
+                    <Link href="/about-us">About Us</Link>
                   </li>
                   <li
                     id="menu-item-54"
                     className="menu-item"
                   >
-                    <a href="/services">Services</a>
+                    <Link href="/services">Services</Link>
                   </li>
                   <li
                     id="menu-item-53"
                     className="menu-item"
                   >
-                    <a href="/works">Portfolio</a>
+                    <Link href="/works">Portfolio</Link>
                   </li>
                   <li
                     id="menu-item-55"
                     className="menu-item"
                   >
-                    <a href="/testimonials">Testimonials</a>
+                    <Link href="/testimonials">Testimonials</Link>
                   </li>
                   <li
                     id="menu-item-50"
                     className="menu-item"
                   >
-                    <a href="/blog">Blog</a>
+                    <Link href="/blog">Blog</Link>
                   </li>
                   <li
                     id="menu-item-52"
                     className="menu-item"
                   >
-                    <a href="/contact-us">Contact Us</a>
+                    <Link href="/contact-us">Contact Us</Link>
                   </li>
                 </ul>
               </div>

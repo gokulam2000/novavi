@@ -17,7 +17,7 @@ const port = 3000;
         server.use(express.urlencoded({
             extended: true
         }));
-        server.use(cors());
+        // server.use(cors());
 
         server.use("/api",router);
 

@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-const cors_1 = __importDefault(require("cors"));
 const next_1 = __importDefault(require("next"));
 const router_1 = __importDefault(require("./router"));
 const dev = process.env.NODE_ENV !== "production";
@@ -19,7 +18,7 @@ const port = 3000;
         server.use(express_1.default.urlencoded({
             extended: true
         }));
-        server.use((0, cors_1.default)());
+        // server.use(cors());
         server.use("/api", router_1.default);
         // server.get("/api", (req: Request, res: Response) => {
         //     return res.json("GET API endpoint");

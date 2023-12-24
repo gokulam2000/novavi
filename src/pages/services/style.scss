@@ -10,6 +10,7 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    overflow-x: hidden;
 
     .row-service {
       display: flex;
@@ -48,7 +49,7 @@
         }
       }
       .col-service-1 {
-        flex: 0 0 25%;
+        flex: 0 0 33.3333%;
         position: relative;
         padding-inline: 15px;
 
@@ -155,6 +156,10 @@
           opacity: 1;
         }
       }
+    }
+
+    .home-service-btns {
+      display: flex;
     }
   }
 }
