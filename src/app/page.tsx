@@ -8,6 +8,7 @@ import Circle from "@app/components/circle/circle";
 import Home from "@app/pages/home/home";
 import ScrollIcon from "@app/components/scoll-icon/scroll-icon";
 import Service from "@app/pages/services";
+import AboutUs from "@app/pages/home-about-us";
 
 export default function App() {
   const [mobileToggle, setMobileTogge] = useState<Boolean>(false);
@@ -19,6 +20,7 @@ export default function App() {
       <Home />
       <ScrollIcon />
       <Service/>
+      <AboutUs />
       Text to test
     </main>
   )

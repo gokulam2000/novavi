@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 
 import "./style.scss";
-// import "./aos.scss";
-// import animater from "./aos.js";
 import DigitalMarketing from "@app/components/animated-svgs/digital-marketing/digital-marketing-svg";
 import Designing from "@app/components/animated-svgs/designing/designing-svg";
 import Development from "@app/components/animated-svgs/development/development-svg";
@@ -57,7 +55,7 @@ export default function Service() {
         </div>
         <div className="row home-service-btns">
           <div
-            className="col-lg-4 col-md-4"
+            className="service-column reveals"
             data-aos="fade-up"
             data-aos-delay={300}
           >
@@ -65,9 +63,12 @@ export default function Service() {
               href="service/digital-marketing/index.html"
               className="digital-marketing"
             >
-              <span>
+              <span className="digitalmarketing-container">
                 <span className="digitalmarketing-svg">
-                  <DigitalMarketing />
+                  <DigitalMarketing style={{ 
+                    height: "160px",
+                    verticalAlign: "middle"
+                     }} />
                 </span>
                 <h6>Digital</h6>
                 <h4>Marketing</h4>
@@ -75,7 +76,7 @@ export default function Service() {
             </a>
           </div>
           <div
-            className="col-lg-4 col-md-4"
+            className="service-column reveals"
             data-aos="fade-up"
             data-aos-delay={500}
           >
@@ -83,9 +84,12 @@ export default function Service() {
               href="service/website-designing/index.html"
               className="website-designing"
             >
-              <span>
+              <span className="websitedesigning-container">
                 <span className="websitedesigning-svg">
-                  <Designing />
+                  <Designing style={{ 
+                    height: "160px",
+                    verticalAlign: "middle"
+                     }} />
                 </span>
                 <h6>Website</h6>
                 <h4>Designing</h4>
@@ -93,7 +97,7 @@ export default function Service() {
             </a>
           </div>
           <div
-            className="col-lg-4 col-md-4"
+            className="service-column reveals"
             data-aos="fade-up"
             data-aos-delay={400}
           >
@@ -101,9 +105,12 @@ export default function Service() {
               href="service/software-development/index.html"
               className="software-development"
             >
-              <span>
+              <span className="softwaredevelopment-container">
                 <span className="softwaredevelopment-svg">
-                  <Development />
+                  <Development style={{ 
+                    height: "160px",
+                    verticalAlign: "middle"
+                     }} />
                 </span>
                 <h6>Software</h6>
                 <h4>Development</h4>

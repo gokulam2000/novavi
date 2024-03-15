@@ -1,6 +1,8 @@
+import { CSSProperties } from "react";
+
 import "./style.scss";
 
-export default function Designing() {
+export default function Designing({ style }:{ style: CSSProperties }) {
  return (
   <svg
   className="designing-svg"
@@ -11,6 +13,7 @@ export default function Designing() {
    y="0px"
    viewBox="0 0 255 249"
    xmlSpace="preserve"
+   style={style}
   >
    <g id="Layer_3">
     <g>

@@ -1,6 +1,7 @@
+import { CSSProperties } from "react";
 import "./style.scss";
 
-export default function DigitalMarketing() {
+export default function DigitalMarketing({ style }: { style: CSSProperties }) {
   return (
     <svg
       className="digital-marketing-svg"
@@ -11,6 +12,7 @@ export default function DigitalMarketing() {
       y="0px"
       viewBox="0 0 245 246"
       xmlSpace="preserve"
+      style={style}
     >
       <g id="Layer_2">
         <g>

@@ -16,7 +16,7 @@ export default function Services() {
           <a href="service/digital-marketing" className="digital-marketing">
             <span>
               <span className="digitalmarketing-svg">
-                <DigitalMarketing />
+                <DigitalMarketing style={{ height: "90px" }} />
               </span>
               <h6>Digital</h6>
               <h4>Marketing</h4>
@@ -27,7 +27,7 @@ export default function Services() {
           <a href="service/website-designing" className="website-designing">
             <span>
               <span className="websitedesigning-svg">
-                <Designing />
+                <Designing style={{ height: "90px" }} />
               </span>
               <h6>Website</h6>
               <h4>Designing</h4>
@@ -41,7 +41,7 @@ export default function Services() {
           >
             <span>
               <span className="softwaredevelopment-svg">
-                <Development />
+                <Development style={{ height: "90px" }} />
               </span>
               <h6>Software</h6>
               <h4>Development</h4>
