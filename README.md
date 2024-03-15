@@ -29,4 +29,4 @@ The above command will install all the necessary dependencies mentioned in the p
    ```bash
    npm start
    ```
-
+   The production server is also configured on port 3000.
