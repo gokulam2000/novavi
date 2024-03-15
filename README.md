@@ -1,17 +1,32 @@
-## Getting Started
+## Get started
 
-First, run the development server:
-
+### STEP-1: Clone the repository.
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/devdevaraj/novavi.git
 ```
+### STEP-2: Switch to the cloned directory.
+```bash
+cd novavi
+```
+### STEP-3: Install the dependencies.
+```bash
+npm install
+```
+The above command will install all the necessary dependencies mentioned in the package.json file.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### STEP-4: Strt the server
+   #### Starting development server
+   ```bash
+   npm run dev
+   ```
+   The server will start on port 3000
+   #### Starting production server
+   Before starting the production server you need to build the project using the following command.
+   ```bash
+   npm run dev
+   ```
+   After the building process is done you can start the production server.
+   ```bash
+   npm start
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
